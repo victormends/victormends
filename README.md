@@ -1,3 +1,4 @@
+
 ### Hi there, I'm Victor Mendes 👋
 
 A **Data & Support Operations Engineer** who specializes in bridging the gap between infrastructure resilience, data engineering, and technical compliance. I transform complex operational bottlenecks into automated, high-performance systems.
