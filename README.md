@@ -81,7 +81,7 @@ The same pattern-isolation discipline behind a **Silver Medal at the Brazilian M
 ## Technical Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=postgres,powershell,py,aws,git,linux" alt="Tech stack"/>
+  <a href="#technical-stack"><img src="https://skillicons.dev/icons?i=postgres,powershell,py,aws,git,windows,bash" alt="Tech stack"/></a>
 </p>
 
 <p align="center">
