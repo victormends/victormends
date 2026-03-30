@@ -1,32 +1,44 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:2d3561,100:c678dd&height=200&section=header&text=Jo%C3%A3o%20Victor%20Mendes&fontSize=42&fontColor=ffffff&fontAlignY=40&desc=L2%2FL3%20Technical%20Support%20Engineer%20%7C%20PostgreSQL%20%C2%B7%20Database%20Incident%20Response%20%C2%B7%20ETL&descSize=16&descAlignY=62&descColor=adbac7&animation=fadeIn" alt="João Victor Mendes"/>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3500&pause=1000&color=C678DD&center=true&vCenter=true&width=700&height=50&lines=Production+PostgreSQL+%40+500%2B+enterprise+clients+%7C+95%25%2B+SLA;Fix+root+causes.+The+failure+class+won%27t+recur." alt="Typing SVG"/>
+  <em>"I treat production behavior as the real specification: isolate variables, find root causes, fix structurally so the failure class cannot recur."</em>
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&duration=3500&pause=1000&color=C678DD&center=true&vCenter=true&width=700&height=45&lines=Production+PostgreSQL+%40+500%2B+enterprise+clients+%7C+95%25%2B+SLA;P1%2FP2+incident+response+%E2%80%94+end-to-end%2C+no+escalation" alt="Typing SVG"/>
 </p>
 
 <p align="center">
   <a href="https://linkedin.com/in/mendes-victor">
-    <img src="https://img.shields.io/badge/%F0%9F%94%97%20LinkedIn%20%E2%80%94%20mendes--victor-0A66C2?style=for-the-badge&logoColor=white" alt="LinkedIn"/>
+    <img src="https://img.shields.io/badge/LinkedIn%20%E2%80%94%20mendes--victor-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Brazil%2C%20PR-4B8BBE?style=flat-square&logoColor=white" alt="Location"/>
+  <img src="https://img.shields.io/badge/Brasil%2C%20PR-4B8BBE?style=flat-square&logoColor=white" alt="Location"/>
   &nbsp;
-  <img src="https://img.shields.io/badge/Pedroso%20Automacao%20%E2%80%93%20Current-2ea44f?style=flat-square" alt="Current employer"/>
+  <img src="https://img.shields.io/badge/Pedroso%20Automa%C3%A7%C3%A3o%20%E2%80%93%20Current-2ea44f?style=flat-square" alt="Current employer"/>
   &nbsp;
-  <img src="https://img.shields.io/badge/English%20%E2%80%93%20Full%20Professional%20Proficiency-6c757d?style=flat-square" alt="English"/>
+  <img src="https://img.shields.io/badge/English%20%E2%80%93%20B2%20Full%20Professional-6c757d?style=flat-square" alt="English"/>
 </p>
 
 ---
 
-## How I Work
+```yaml
+name:              João Victor Mendes
+role:              L2/L3 Technical Support Engineer
+company:           Pedroso Automação  # B2B fiscal compliance ERP SaaS
+location:          União da Vitória, PR, Brazil
 
-> *"I treat production behavior as the real specification: isolate variables, find root causes, fix structurally so the failure class cannot recur."*
+specialty:         [PostgreSQL, Incident Response, ETL, Windows Server Automation]
+clients:           500+ corporate  # 1500+ end-users
+sla_compliance:    "95%+"
+tickets_per_week:  80+
 
-Three years in enterprise technical roles — currently running L2/L3 incident response at **Pedroso Automação** across **500+ corporate clients** (1,500+ end-users), closing **80+ tickets/week at 95%+ SLA** in fiscal compliance environments where 30 minutes of downtime means approximately $15k USD in combined client exposure. Full-scope, solo on-call, resolving P1/P2s end-to-end without escalation.
-
-The same pattern-isolation discipline behind a **Silver Medal at the Brazilian Mathematics Olympiad** (top 0.01% of 18M+ participants) is the method I apply to production failures that don't fit known playbooks.
+currently:         Building public portfolio repos — 18 production case studies
+open_to:           [Senior Support Engineering, Database Engineering, SRE]
+contact:           linkedin.com/in/mendes-victor
+```
 
 ---
 
@@ -104,6 +116,20 @@ The same pattern-isolation discipline behind a **Silver Medal at the Brazilian M
   <a href="#technical-stack"><img src="https://img.shields.io/badge/ETL%20Pipeline%20Design-198754?style=flat-square" alt="ETL Pipeline Design"/></a>
   <a href="#technical-stack"><img src="https://img.shields.io/badge/NF--e%20%2F%20CT--e%20%2F%20SEFAZ-198754?style=flat-square" alt="NF-e / CT-e / SEFAZ"/></a>
   <a href="#technical-stack"><img src="https://img.shields.io/badge/pg__hba%20%2F%20SCRAM%20%2F%20RBAC-6c757d?style=flat-square" alt="pg_hba / SCRAM / RBAC"/></a>
+</p>
+
+---
+
+## Activity
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=victormends&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" height="160" alt="GitHub Stats"/>
+  &nbsp;&nbsp;
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=victormends&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" height="160" alt="Top Languages"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=victormends&theme=tokyo-night&hide_border=true&custom_title=Contribution%20Activity" alt="Activity Graph"/>
 </p>
 
 ---
