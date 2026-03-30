@@ -125,16 +125,6 @@ contact:           linkedin.com/in/mendes-victor
 
 ---
 
-## Activity
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=victormends&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" height="160" alt="GitHub Stats"/>
-  &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=victormends&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" height="160" alt="Top Languages"/>
-</p>
-
----
-
 ## Background
 
 <table>
