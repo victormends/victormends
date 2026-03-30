@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:2d3561,100:c678dd&height=200&section=header&text=Jo%C3%A3o%20Victor%20Mendes&fontSize=42&fontColor=ffffff&fontAlignY=40&desc=L2%2FL3%20Technical%20Support%20Engineer%20%7C%20PostgreSQL%20%C2%B7%20Database%20Incident%20Response%20%C2%B7%20ETL&descSize=16&descAlignY=62&descColor=adbac7&animation=fadeIn" alt="João Victor Mendes header"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:2d3561,100:c678dd&height=200&section=header&text=Jo%C3%A3o%20Victor%20Mendes&fontSize=42&fontColor=ffffff&fontAlignY=40&desc=L2%2FL3%20Technical%20Support%20Engineer%20%7C%20PostgreSQL%20%C2%B7%20Database%20Incident%20Response%20%C2%B7%20ETL&descSize=16&descAlignY=62&descColor=adbac7&animation=fadeIn" alt="João Victor Mendes"/>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3500&pause=1000&color=C678DD&center=true&vCenter=true&width=700&height=50&lines=Production+PostgreSQL+%40+500%2B+enterprise+clients+%7C+95%25%2B+SLA;Fix+root+causes.+The+failure+class+won%27t+recur." alt="Typing SVG"/>
@@ -14,7 +14,7 @@
 
 ---
 
-## 🧠 How I Work
+## How I Work
 
 > *"I treat production behavior as the real specification: isolate variables, find root causes, fix structurally so the failure class cannot recur."*
 
@@ -24,52 +24,64 @@ The same pattern-isolation discipline behind a **Silver Medal at the Brazilian M
 
 ---
 
-## ⚡ Impact Highlights
+## Impact Highlights
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <strong>🗄️ PostgreSQL &amp; Database Engineering</strong>
-      <ul>
-        <li><b>Eliminated 100% of WAL data losses</b> across 500+ environments — identified orphaned replication slots holding WAL segments, enforced <code>max_slot_wal_keep_size</code> as a fleet-wide guardrail.</li>
-        <li><b>Cut restore time 60%</b> (17 min to 6:58) on a 15GB+ database via <code>pg_restore -j 4</code> parallel processing. Traced bloat through <code>pg_class</code>/<code>pg_toast</code> to encrypted paths serialized as thousands of characters per audit log entry.</li>
-        <li><b>Automated 30-database cluster recovery</b> with a PowerShell script that parallelizes state checks, clears stale <code>postmaster.pid</code> files, and handles WAL recovery on boot. Recovery cut from hours to under 5 minutes, daily support calls to near-zero.</li>
-      </ul>
+<br/>
+
+**PostgreSQL &amp; Database Engineering**
+
+- **Eliminated 100% of WAL data losses** across 500+ environments — identified orphaned replication slots holding WAL segments, enforced `max_slot_wal_keep_size` as a fleet-wide guardrail.
+- **Cut restore time 60%** (17 min to 6:58) on a 15GB+ database via `pg_restore -j 4` parallel processing. Traced bloat through `pg_class`/`pg_toast` to encrypted paths serialized as thousands of characters per audit log entry.
+- **Automated 30-database cluster recovery** with a PowerShell script that parallelizes state checks, clears stale `postmaster.pid` files, and handles WAL recovery on boot. Recovery cut from hours to under 5 minutes, daily support calls to near-zero.
+
+<br/>
     </td>
     <td width="50%" valign="top">
-      <strong>🔧 Automation &amp; Data Engineering</strong>
-      <ul>
-        <li><b>Engineered a 70M-record ETL pipeline</b> in a single day using PL/pgSQL + PowerShell against a 15GB+ government dataset. Unlogged tables and dynamic SQL cut processing time 60%, surfacing the top 0.001% of leads that drove Q3 commercial strategy.</li>
-        <li><b>Compressed fiscal invoice diagnosis from 30+ min to under 5 min</b> using LLM-assisted XML parsing of raw SEFAZ rejection messages, eliminating an entire class of developer escalations.</li>
-        <li><b>Zero data-loss legacy migration:</b> reverse-engineered a Firebird database with no documentation in an afternoon, replaying 20 years of transaction history (10,000+ items, 500k BRL) to reconstruct current inventory state.</li>
-      </ul>
+<br/>
+
+**Automation &amp; Data Engineering**
+
+- **Engineered a 70M-record ETL pipeline** in a single day using PL/pgSQL + PowerShell against a 15GB+ government dataset. Unlogged tables and dynamic SQL cut processing time 60%, surfacing the top 0.001% of leads that drove Q3 commercial strategy.
+- **Compressed fiscal invoice diagnosis from 30+ min to under 5 min** using LLM-assisted XML parsing of raw SEFAZ rejection messages, eliminating an entire class of developer escalations.
+- **Zero data-loss legacy migration:** reverse-engineered a Firebird database with no documentation in an afternoon, replaying 20 years of transaction history (10,000+ items, 500k BRL) to reconstruct current inventory state.
+
+<br/>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <strong>🔐 Security &amp; Forensics</strong>
-      <ul>
-        <li><b>Traced silent TLS 1.0 downgrade failures</b> on Windows 11 clients via Process Monitor with no prior documentation. Identified a registry key modification by the application, delivered a PowerShell quickfix, and enabled a permanent dev team code fix within the same week.</li>
-        <li><b>Restored database access</b> across legacy machines after a <code>pg_hba.conf</code> SCRAM-SHA-256 vs MD5 mismatch, applying scoped MD5 by IP range while preserving SCRAM everywhere else. No OS reformats, no security posture reduction.</li>
-      </ul>
+<br/>
+
+**Security &amp; Forensics**
+
+- **Traced silent TLS 1.0 downgrade failures** on Windows 11 clients via Process Monitor with no prior documentation. Identified a registry key modification by the application, delivered a PowerShell quickfix, and enabled a permanent dev team code fix within the same week.
+- **Restored database access** across legacy machines after a `pg_hba.conf` SCRAM-SHA-256 vs MD5 mismatch, applying scoped MD5 by IP range while preserving SCRAM everywhere else. No OS reformats, no security posture reduction.
+
+<br/>
     </td>
     <td width="50%" valign="top">
-      <strong>☁️ Cloud &amp; Infrastructure</strong>
-      <ul>
-        <li><b>Managed DNS and cloud infrastructure</b> for 70+ corporate clients across AWS Route 53, Registro.br, and Locaweb, including domain purchases, migrations, ownership transfers, and full record configuration.</li>
-        <li><b>Investigated and remediated a client security breach</b> by auditing Git commit history, WordPress roles, and access logs; revoked sessions, reset credentials, restructured access controls.</li>
-        <li><b>Coordinated staged AWS deployments</b> across multi-developer environments, enforcing freeze protocols and validating through multiple pre-production layers across 70+ client sites.</li>
-      </ul>
+<br/>
+
+**Cloud &amp; Infrastructure**
+
+- **Managed DNS and cloud infrastructure** for 70+ corporate clients across AWS Route 53, Registro.br, and Locaweb, including domain purchases, migrations, ownership transfers, and full record configuration.
+- **Investigated and remediated a client security breach** by auditing Git commit history, WordPress roles, and access logs; revoked sessions, reset credentials, restructured access controls.
+- **Coordinated staged AWS deployments** across multi-developer environments, enforcing freeze protocols and validating through multiple pre-production layers across 70+ client sites.
+
+<br/>
     </td>
   </tr>
 </table>
 
 ---
 
-## 🛠️ Technical Stack
+## Technical Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=postgres,powershell,py,aws,git,linux" alt="Tech stack icons"/>
+  <img src="https://skillicons.dev/icons?i=postgres,powershell,py,aws,git,linux" alt="Tech stack"/>
 </p>
 
 <p align="center">
@@ -91,12 +103,12 @@ The same pattern-isolation discipline behind a **Silver Medal at the Brazilian M
 
 ---
 
-## 🎓 Background
+## Background
 
 | | |
 |---|---|
-| 🏅 **OBMEP Silver Medal** (2016), Bronze (2014), 2x Honorable Mentions — top 0.01% of **18M+ participants** nationally. Selected for CDMC elite program at FGV. | 🎓 **FGV** — Data Science & Economics (2020-2022) on full-ride OBMEP scholarship. EDA: 9.71. Left for a hands-on production engineering role. |
-| 💬 **English:** Full Professional Proficiency — BRASAS certified (B2). Primary liaison for US/EU vendors. | 🏛️ **IFPR** — Systems Analysis & Development (2023-2024). Grade A in Mathematics for Computing. Left for a full-time L3 position. |
+| **OBMEP Silver Medal** (2016), Bronze (2014), 2x Honorable Mentions — top 0.01% of **18M+** participants nationally. Selected for CDMC elite program at FGV. | **FGV** — Data Science & Economics (2020-2022) on full-ride OBMEP scholarship. EDA: 9.71. Left for a hands-on production engineering role. |
+| **English:** Full Professional Proficiency — BRASAS certified (B2). Primary liaison for US/EU vendors. | **IFPR** — Systems Analysis & Development (2023-2024). Grade A in Mathematics for Computing. Left for a full-time L3 position. |
 
 ---
 
