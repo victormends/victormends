@@ -43,7 +43,7 @@ releasing_soon:
   - "cluster-recovery.ps1    # 30-database WAL + postmaster.pid automation"
   - "etl-pipeline.sql        # PL/pgSQL, 70M records, government dataset"
   - "sefaz-xml-parser.py     # Fiscal diagnosis toolkit (NF-e, CT-e, CFOP)"
-  - "pg-bloat-audit.sql      # pg_class / pg_toast forensic analysis queries"
+  - "pg-bloat-audit.sql      # pg_class / pg_toast internals analysis queries"
 
 open_to:           [Support Engineering, Database Engineering, SRE]
 contact:           linkedin.com/in/mendes-victor
