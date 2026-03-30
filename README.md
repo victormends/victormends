@@ -5,11 +5,17 @@
 </p>
 
 <p align="center">
-  <a href="https://linkedin.com/in/mendes-victor"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://linkedin.com/in/mendes-victor">
+    <img src="https://img.shields.io/badge/%F0%9F%94%97%20LinkedIn%20%E2%80%94%20mendes--victor-0A66C2?style=for-the-badge&logoColor=white" alt="LinkedIn"/>
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Brazil%2C%20PR-4B8BBE?style=flat-square&logoColor=white" alt="Location"/>
   &nbsp;
-  <img src="https://img.shields.io/badge/Brazil%2C%20PR-4B8BBE?style=for-the-badge&logoColor=white" alt="Location"/>
+  <img src="https://img.shields.io/badge/Pedroso%20Automacao%20%E2%80%93%20Current-2ea44f?style=flat-square" alt="Current employer"/>
   &nbsp;
-  <img src="https://img.shields.io/badge/Pedroso%20Automacao-Current-2ea44f?style=for-the-badge" alt="Current employer"/>
+  <img src="https://img.shields.io/badge/English%20%E2%80%93%20Full%20Professional%20Proficiency-6c757d?style=flat-square" alt="English"/>
 </p>
 
 ---
@@ -18,9 +24,9 @@
 
 > *"I treat production behavior as the real specification: isolate variables, find root causes, fix structurally so the failure class cannot recur."*
 
-Three years running L2/L3 incident response across **500+ corporate clients** (1,500+ end-users), closing **80+ tickets/week at 95%+ SLA** in fiscal compliance environments where 30 minutes of downtime means approximately $15k USD in combined client exposure. I operate full-scope, solo on-call, resolving P1/P2s end-to-end without escalation.
+Three years in enterprise technical roles — currently running L2/L3 incident response at **Pedroso Automação** across **500+ corporate clients** (1,500+ end-users), closing **80+ tickets/week at 95%+ SLA** in fiscal compliance environments where 30 minutes of downtime means approximately $15k USD in combined client exposure. Full-scope, solo on-call, resolving P1/P2s end-to-end without escalation.
 
-The same pattern-isolation discipline behind a **Silver Medal at the Brazilian Mathematics Olympiad** (top 0.01% of 18M+ participants) is the method I bring to production failures that don't fit known playbooks.
+The same pattern-isolation discipline behind a **Silver Medal at the Brazilian Mathematics Olympiad** (top 0.01% of 18M+ participants) is the method I apply to production failures that don't fit known playbooks.
 
 ---
 
@@ -31,45 +37,32 @@ The same pattern-isolation discipline behind a **Silver Medal at the Brazilian M
     <td width="50%" valign="top">
 <br/>
 
-**PostgreSQL &amp; Database Engineering**
+**PostgreSQL & Database Engineering**
 
-- **Eliminated 100% of WAL data losses** across 500+ environments — identified orphaned replication slots holding WAL segments, enforced `max_slot_wal_keep_size` as a fleet-wide guardrail.
-- **Cut restore time 60%** (17 min to 6:58) on a 15GB+ database via `pg_restore -j 4` parallel processing. Traced bloat through `pg_class`/`pg_toast` to encrypted paths serialized as thousands of characters per audit log entry.
+- **Eliminated 100% of WAL data losses** across 500+ environments — identified orphaned replication slots holding WAL segments for a decommissioned subscriber, enforced `max_slot_wal_keep_size` as a fleet-wide guardrail so the failure class cannot recur.
+- **Cut restore time 60%** (17 min to 6:58) on a 15GB+ database via `pg_restore -j 4` parallel processing. Traced 1GB/month disk bloat through `pg_class`/`pg_toast` to encrypted paths serialized as thousands of characters per audit log entry.
 - **Automated 30-database cluster recovery** with a PowerShell script that parallelizes state checks, clears stale `postmaster.pid` files, and handles WAL recovery on boot. Recovery cut from hours to under 5 minutes, daily support calls to near-zero.
+- **Traced silent TLS 1.0 downgrade failures** on Windows 11 clients via Process Monitor with no prior documentation — identified a registry key forced by the application, delivered a quickfix, and enabled a permanent code fix within the same week.
+- **Restored database access** fleet-wide after a `pg_hba.conf` SCRAM-SHA-256 vs MD5 mismatch, applying scoped MD5 by IP range while preserving SCRAM everywhere else. No reformats, no security posture reduction.
 
 <br/>
     </td>
     <td width="50%" valign="top">
 <br/>
 
-**Automation &amp; Data Engineering**
+**Automation & Data Engineering**
 
 - **Engineered a 70M-record ETL pipeline** in a single day using PL/pgSQL + PowerShell against a 15GB+ government dataset. Unlogged tables and dynamic SQL cut processing time 60%, surfacing the top 0.001% of leads that drove Q3 commercial strategy.
-- **Compressed fiscal invoice diagnosis from 30+ min to under 5 min** using LLM-assisted XML parsing of raw SEFAZ rejection messages, eliminating an entire class of developer escalations.
-- **Zero data-loss legacy migration:** reverse-engineered a Firebird database with no documentation in an afternoon, replaying 20 years of transaction history (10,000+ items, 500k BRL) to reconstruct current inventory state.
+- **Compressed fiscal invoice diagnosis from 30+ min to under 5 min** using LLM-assisted XML parsing of raw SEFAZ rejection messages across NCM, CFOP, ICMS, and CBNEF formats — eliminating an entire class of developer escalations.
+- **Zero data-loss legacy migration:** reverse-engineered a Firebird database with no documentation in an afternoon, replaying 20 years of transaction history (10,000+ items, 500k BRL) from first principles to reconstruct current inventory state.
 
 <br/>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-<br/>
 
-**Security &amp; Forensics**
+**Previous Role — Cloud & Infrastructure** *(Girafa, 2022-2024)*
 
-- **Traced silent TLS 1.0 downgrade failures** on Windows 11 clients via Process Monitor with no prior documentation. Identified a registry key modification by the application, delivered a PowerShell quickfix, and enabled a permanent dev team code fix within the same week.
-- **Restored database access** across legacy machines after a `pg_hba.conf` SCRAM-SHA-256 vs MD5 mismatch, applying scoped MD5 by IP range while preserving SCRAM everywhere else. No OS reformats, no security posture reduction.
-
-<br/>
-    </td>
-    <td width="50%" valign="top">
-<br/>
-
-**Cloud &amp; Infrastructure**
-
-- **Managed DNS and cloud infrastructure** for 70+ corporate clients across AWS Route 53, Registro.br, and Locaweb, including domain purchases, migrations, ownership transfers, and full record configuration.
-- **Investigated and remediated a client security breach** by auditing Git commit history, WordPress roles, and access logs; revoked sessions, reset credentials, restructured access controls.
-- **Coordinated staged AWS deployments** across multi-developer environments, enforcing freeze protocols and validating through multiple pre-production layers across 70+ client sites.
+- **Managed DNS and cloud infrastructure** for 70+ corporate clients across AWS Route 53, Registro.br, and Locaweb — purchases, migrations, ownership transfers, full record configuration.
+- **Investigated a client security breach** by auditing Git history, WordPress roles, and access logs; revoked sessions, reset credentials, restructured access controls.
+- **Coordinated staged AWS deployments** across a multi-developer environment, enforcing freeze protocols across 70+ client sites.
 
 <br/>
     </td>
@@ -117,10 +110,30 @@ The same pattern-isolation discipline behind a **Silver Medal at the Brazilian M
 
 ## Background
 
-| | |
-|---|---|
-| **OBMEP Silver Medal** (2016), Bronze (2014), 2x Honorable Mentions — top 0.01% of **18M+** participants nationally. Selected for CDMC elite program at FGV. | **FGV** — Data Science & Economics (2020-2022) on full-ride OBMEP scholarship. EDA: 9.71. Left for a hands-on production engineering role. |
-| **English:** Full Professional Proficiency — BRASAS certified (B2). Primary liaison for US/EU vendors. | **IFPR** — Systems Analysis & Development (2023-2024). Grade A in Mathematics for Computing. Left for a full-time L3 position. |
+<table>
+  <tr>
+    <td align="center" width="60%">
+<br/>
+
+**OBMEP Mathematics Olympiad**
+Silver Medal (2016) &nbsp;·&nbsp; Bronze (2014) &nbsp;·&nbsp; 2x Honorable Mentions
+Top 0.01% of **18M+ participants** nationally &nbsp;·&nbsp; Selected for CDMC elite program at FGV
+
+<br/>
+    </td>
+    <td width="40%" valign="top">
+<br/>
+
+**FGV** — Data Science & Economics (2020-2022)
+Full-ride OBMEP scholarship &nbsp;·&nbsp; EDA: 9.71
+
+**IFPR** — Systems Analysis & Development (2023-2024)
+Grade A in Mathematics for Computing
+
+<br/>
+    </td>
+  </tr>
+</table>
 
 ---
 
