@@ -81,24 +81,36 @@ The same pattern-isolation discipline behind a **Silver Medal at the Brazilian M
 ## Technical Stack
 
 <p align="center">
-  <a href="#technical-stack"><img src="https://skillicons.dev/icons?i=postgres,powershell,py,aws,git,windows,bash" alt="Tech stack"/></a>
+  <a href="https://www.postgresql.org/"><img src="https://skillicons.dev/icons?i=postgres" height="40" alt="PostgreSQL"/></a>
+  &nbsp;
+  <a href="https://learn.microsoft.com/en-us/powershell/"><img src="https://skillicons.dev/icons?i=powershell" height="40" alt="PowerShell"/></a>
+  &nbsp;
+  <a href="https://www.python.org/"><img src="https://skillicons.dev/icons?i=py" height="40" alt="Python"/></a>
+  &nbsp;
+  <a href="https://aws.amazon.com/"><img src="https://skillicons.dev/icons?i=aws" height="40" alt="AWS"/></a>
+  &nbsp;
+  <a href="https://git-scm.com/"><img src="https://skillicons.dev/icons?i=git" height="40" alt="Git"/></a>
+  &nbsp;
+  <a href="https://www.microsoft.com/en-us/windows-server"><img src="https://skillicons.dev/icons?i=windows" height="40" alt="Windows Server"/></a>
+  &nbsp;
+  <a href="https://www.gnu.org/software/bash/"><img src="https://skillicons.dev/icons?i=bash" height="40" alt="Bash"/></a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/WAL%20Management-316192?style=flat-square" alt="WAL Management"/>
-  <img src="https://img.shields.io/badge/PL%2FpgSQL-336791?style=flat-square" alt="PL/pgSQL"/>
-  <img src="https://img.shields.io/badge/EXPLAIN%20ANALYZE-4169E1?style=flat-square" alt="EXPLAIN ANALYZE"/>
-  <img src="https://img.shields.io/badge/Replication%20Slots-316192?style=flat-square" alt="Replication Slots"/>
-  <img src="https://img.shields.io/badge/Bloat%20Analysis-336791?style=flat-square" alt="Bloat Analysis"/>
-  <img src="https://img.shields.io/badge/autovacuum-8B0000?style=flat-square" alt="autovacuum"/>
+  <a href="#technical-stack"><img src="https://img.shields.io/badge/WAL%20Management-316192?style=flat-square" alt="WAL Management"/></a>
+  <a href="#technical-stack"><img src="https://img.shields.io/badge/PL%2FpgSQL-336791?style=flat-square" alt="PL/pgSQL"/></a>
+  <a href="#technical-stack"><img src="https://img.shields.io/badge/EXPLAIN%20ANALYZE-4169E1?style=flat-square" alt="EXPLAIN ANALYZE"/></a>
+  <a href="#technical-stack"><img src="https://img.shields.io/badge/Replication%20Slots-316192?style=flat-square" alt="Replication Slots"/></a>
+  <a href="#technical-stack"><img src="https://img.shields.io/badge/Bloat%20Analysis-336791?style=flat-square" alt="Bloat Analysis"/></a>
+  <a href="#technical-stack"><img src="https://img.shields.io/badge/autovacuum-8B0000?style=flat-square" alt="autovacuum"/></a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/ITIL%20RCA-DC3545?style=flat-square" alt="ITIL RCA"/>
-  <img src="https://img.shields.io/badge/P1%2FP2%20Incident%20Response-DC3545?style=flat-square" alt="P1/P2 Incident Response"/>
-  <img src="https://img.shields.io/badge/ETL%20Pipeline%20Design-198754?style=flat-square" alt="ETL Pipeline Design"/>
-  <img src="https://img.shields.io/badge/NF--e%20%2F%20CT--e%20%2F%20SEFAZ-198754?style=flat-square" alt="NF-e / CT-e / SEFAZ"/>
-  <img src="https://img.shields.io/badge/pg__hba%20%2F%20SCRAM%20%2F%20RBAC-6c757d?style=flat-square" alt="pg_hba / SCRAM / RBAC"/>
+  <a href="#technical-stack"><img src="https://img.shields.io/badge/ITIL%20RCA-DC3545?style=flat-square" alt="ITIL RCA"/></a>
+  <a href="#technical-stack"><img src="https://img.shields.io/badge/P1%2FP2%20Incident%20Response-DC3545?style=flat-square" alt="P1/P2 Incident Response"/></a>
+  <a href="#technical-stack"><img src="https://img.shields.io/badge/ETL%20Pipeline%20Design-198754?style=flat-square" alt="ETL Pipeline Design"/></a>
+  <a href="#technical-stack"><img src="https://img.shields.io/badge/NF--e%20%2F%20CT--e%20%2F%20SEFAZ-198754?style=flat-square" alt="NF-e / CT-e / SEFAZ"/></a>
+  <a href="#technical-stack"><img src="https://img.shields.io/badge/pg__hba%20%2F%20SCRAM%20%2F%20RBAC-6c757d?style=flat-square" alt="pg_hba / SCRAM / RBAC"/></a>
 </p>
 
 ---
