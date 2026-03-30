@@ -13,7 +13,7 @@
     <img src="https://img.shields.io/badge/LinkedIn%20%E2%80%94%20mendes--victor-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
   &nbsp;
-  <a href="https://github.com/victormends/curriculum-victor-mendes">
+  <a href="https://github.com/victormends/curriculum-victor-mendes/blob/main/Joao_Victor_Mendes_Resume.pdf">
     <img src="https://img.shields.io/badge/R%C3%A9sum%C3%A9%20%E2%80%94%20PDF-132046?style=for-the-badge&logo=googledocs&logoColor=white" alt="Résumé"/>
   </a>
 </p>
