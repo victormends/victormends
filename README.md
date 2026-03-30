@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&duration=3500&pause=1000&color=C678DD&center=true&vCenter=true&width=700&height=45&lines=Production+PostgreSQL+%40+500%2B+enterprise+clients+%7C+95%25%2B+SLA;P1%2FP2+incident+response+%E2%80%94+end-to-end%2C+no+escalation" alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&duration=3500&pause=1000&color=C678DD&center=true&vCenter=true&width=700&height=45&lines=Production+PostgreSQL+%40+500%2B+enterprise+clients+%7C+95%25%2B+SLA;P1%2FP2+incident+response%2C+end-to-end%2C+no+escalation" alt="Typing SVG"/>
 </p>
 
 <p align="center">
@@ -35,8 +35,13 @@ clients:           500+ corporate  # 1500+ end-users
 sla_compliance:    "95%+"
 tickets_per_week:  80+
 
-currently:         Building public portfolio repos — 18 production case studies
-open_to:           [Senior Support Engineering, Database Engineering, SRE]
+releasing_soon:
+  - "cluster-recovery.ps1    # 30-database WAL + postmaster.pid automation"
+  - "etl-pipeline.sql        # PL/pgSQL, 70M records, government dataset"
+  - "sefaz-xml-parser.py     # Fiscal diagnosis toolkit (NF-e, CT-e, CFOP)"
+  - "pg-bloat-audit.sql      # pg_class / pg_toast forensic analysis queries"
+
+open_to:           [Support Engineering, Database Engineering, SRE]
 contact:           linkedin.com/in/mendes-victor
 ```
 
@@ -51,10 +56,10 @@ contact:           linkedin.com/in/mendes-victor
 
 **PostgreSQL & Database Engineering**
 
-- **Eliminated 100% of WAL data losses** across 500+ environments — identified orphaned replication slots holding WAL segments for a decommissioned subscriber, enforced `max_slot_wal_keep_size` as a fleet-wide guardrail so the failure class cannot recur.
-- **Cut restore time 60%** (17 min to 6:58) on a 15GB+ database via `pg_restore -j 4` parallel processing. Traced 1GB/month disk bloat through `pg_class`/`pg_toast` to encrypted paths serialized as thousands of characters per audit log entry.
+- **Eliminated 100% of WAL data losses** across 500+ environments by querying `pg_replication_slots`, identifying an orphaned slot holding WAL segments for a decommissioned subscriber, and enforcing `max_slot_wal_keep_size` as a fleet-wide guardrail so the failure class cannot recur.
+- **Cut restore time 60%** (17 min to 6:58) on a 15GB+ database via `pg_restore -j 4` parallel processing. Traced 1GB/month disk bloat through `pg_class` and `pg_toast` to encrypted paths serialized as thousands of characters per audit log entry.
 - **Automated 30-database cluster recovery** with a PowerShell script that parallelizes state checks, clears stale `postmaster.pid` files, and handles WAL recovery on boot. Recovery cut from hours to under 5 minutes, daily support calls to near-zero.
-- **Traced silent TLS 1.0 downgrade failures** on Windows 11 clients via Process Monitor with no prior documentation — identified a registry key forced by the application, delivered a quickfix, and enabled a permanent code fix within the same week.
+- **Traced silent TLS 1.0 downgrade failures** on Windows 11 clients via Process Monitor with no prior documentation. Identified a registry key forced by the application, delivered a quickfix, and enabled a permanent code fix within the same week.
 - **Restored database access** fleet-wide after a `pg_hba.conf` SCRAM-SHA-256 vs MD5 mismatch, applying scoped MD5 by IP range while preserving SCRAM everywhere else. No reformats, no security posture reduction.
 
 <br/>
@@ -65,15 +70,15 @@ contact:           linkedin.com/in/mendes-victor
 **Automation & Data Engineering**
 
 - **Engineered a 70M-record ETL pipeline** in a single day using PL/pgSQL + PowerShell against a 15GB+ government dataset. Unlogged tables and dynamic SQL cut processing time 60%, surfacing the top 0.001% of leads that drove Q3 commercial strategy.
-- **Compressed fiscal invoice diagnosis from 30+ min to under 5 min** using LLM-assisted XML parsing of raw SEFAZ rejection messages across NCM, CFOP, ICMS, and CBNEF formats — eliminating an entire class of developer escalations.
+- **Compressed fiscal invoice diagnosis from 30+ min to under 5 min** using LLM-assisted XML parsing of raw SEFAZ rejection messages across NCM, CFOP, ICMS, and CBNEF formats, eliminating an entire class of developer escalations.
 - **Zero data-loss legacy migration:** reverse-engineered a Firebird database with no documentation in an afternoon, replaying 20 years of transaction history (10,000+ items, 500k BRL) from first principles to reconstruct current inventory state.
 
 <br/>
 
 **Previous Role — Cloud & Infrastructure** *(Girafa, 2022-2024)*
 
-- **Managed DNS and cloud infrastructure** for 70+ corporate clients across AWS Route 53, Registro.br, and Locaweb — purchases, migrations, ownership transfers, full record configuration.
-- **Investigated a client security breach** by auditing Git history, WordPress roles, and access logs; revoked sessions, reset credentials, restructured access controls.
+- **Managed DNS and cloud infrastructure** for 70+ corporate clients across AWS Route 53, Registro.br, and Locaweb, including purchases, migrations, ownership transfers, and full record configuration.
+- **Investigated a client security breach** by auditing Git history, WordPress roles, and access logs. Revoked sessions, reset credentials, restructured access controls.
 - **Coordinated staged AWS deployments** across a multi-developer environment, enforcing freeze protocols across 70+ client sites.
 
 <br/>
@@ -126,10 +131,6 @@ contact:           linkedin.com/in/mendes-victor
   <img src="https://github-readme-stats.vercel.app/api?username=victormends&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" height="160" alt="GitHub Stats"/>
   &nbsp;&nbsp;
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=victormends&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" height="160" alt="Top Languages"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=victormends&theme=tokyo-night&hide_border=true&custom_title=Contribution%20Activity" alt="Activity Graph"/>
 </p>
 
 ---
