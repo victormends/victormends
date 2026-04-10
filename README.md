@@ -39,6 +39,9 @@ clients:           500+ corporate  # 1500+ end-users
 sla_compliance:    "95%+"
 tickets_per_week:  80+
 
+featured_now:
+  - "incident-response-runbook  # PostgreSQL incident response + NVC + post-mortems"
+
 releasing_soon:
   - "cluster-recovery.ps1    # 30-database WAL + postmaster.pid automation"
   - "etl-pipeline.sql        # PL/pgSQL, 70M records, government dataset"
@@ -48,6 +51,28 @@ releasing_soon:
 open_to:           [Support Engineering, Database Engineering, SRE]
 contact:           linkedin.com/in/mendes-victor
 ```
+
+---
+
+## Featured Public Repo
+
+<p align="center">
+  <a href="https://github.com/victormends/incident-response-runbook">
+    <img src="https://img.shields.io/badge/incident--response--runbook-public-2ea44f?style=for-the-badge&logo=github&logoColor=white" alt="incident-response-runbook"/>
+  </a>
+</p>
+
+**[`incident-response-runbook`](https://github.com/victormends/incident-response-runbook)**
+
+A production-grade PostgreSQL incident response framework that combines:
+
+- WAL disk exhaustion recovery (`pg_wal` zero bytes free)
+- SCRAM/MD5 and `pg_hba.conf` authentication failures
+- Connection pool exhaustion and lock contention diagnosis
+- Worked post-mortems for both infra and application-layer incidents
+- NVC-based client communication and war-room protocols
+
+This is the clearest public artifact of how I approach production systems: diagnose from first principles, document the failure mode precisely, and encode the fix so the class of incident does not recur.
 
 ---
 
