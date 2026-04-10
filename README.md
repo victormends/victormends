@@ -42,6 +42,7 @@ tickets_per_week:  80+
 featured_now:
   - "incident-response-runbook  # PostgreSQL incident response + NVC + post-mortems"
   - "pg-incident-recovery      # Windows-first PostgreSQL multi-cluster recovery tool"
+  - "windows-postgres-deployment-installer  # operator-assisted Windows PostgreSQL deployment automation"
 
 releasing_soon:
   - "etl-pipeline.sql        # PL/pgSQL, 70M records, government dataset"
@@ -97,6 +98,27 @@ A Windows-first PostgreSQL recovery orchestrator for multi-cluster hosts. It aut
 - persistent queue files so interrupted runs can resume cleanly
 
 This is the executable complement to the runbook repo: the runbook explains how I reason about incidents; this tool shows how I automate one of the ugliest recovery paths without crossing into unsafe automation.
+
+---
+
+## Featured Deployment Repo
+
+<p align="center">
+  <a href="https://github.com/victormends/windows-postgres-deployment-installer">
+    <img src="https://img.shields.io/badge/windows--postgres--deployment--installer-public-2ea44f?style=for-the-badge&logo=github&logoColor=white" alt="windows-postgres-deployment-installer"/>
+  </a>
+</p>
+
+**[`windows-postgres-deployment-installer`](https://github.com/victormends/windows-postgres-deployment-installer)**
+
+An operator-assisted Windows 10/11 deployment baseline for PostgreSQL environments where agility and standardization matter more than infrastructure abstraction.
+
+- PostgreSQL ZIP bootstrap with `initdb`, service registration, and config templating
+- role synchronization, database creation, restore orchestration, and SQL validation
+- conservative-by-default network posture with configurable listen addresses and LAN CIDRs
+- operator-focused fallbacks designed to reduce manual install time from hours to minutes while preserving human review at the end
+
+This repo shows how I think about deployment automation in support-heavy environments: automate the repetitive and failure-prone steps, make reruns safer, and still leave the final evaluation in human hands.
 
 ---
 
