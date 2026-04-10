@@ -43,6 +43,7 @@ featured_now:
   - "incident-response-runbook  # PostgreSQL incident response + NVC + post-mortems"
   - "pg-incident-recovery      # Windows-first PostgreSQL multi-cluster recovery tool"
   - "windows-postgres-deployment-installer  # operator-assisted Windows PostgreSQL deployment automation"
+  - "pg-restore-tool           # Windows-first local PostgreSQL restore utility for rebuild scenarios"
 
 releasing_soon:
   - "etl-pipeline.sql        # PL/pgSQL, 70M records, government dataset"
@@ -119,6 +120,27 @@ An operator-assisted Windows 10/11 deployment baseline for PostgreSQL environmen
 - operator-focused fallbacks designed to reduce manual install time from hours to minutes while preserving human review at the end
 
 This repo shows how I think about deployment automation in support-heavy environments: automate the repetitive and failure-prone steps, make reruns safer, and still leave the final evaluation in human hands.
+
+---
+
+## Featured Restore Repo
+
+<p align="center">
+  <a href="https://github.com/victormends/pg-restore-tool">
+    <img src="https://img.shields.io/badge/pg--restore--tool-public-2ea44f?style=for-the-badge&logo=github&logoColor=white" alt="pg-restore-tool"/>
+  </a>
+</p>
+
+**[`pg-restore-tool`](https://github.com/victormends/pg-restore-tool)**
+
+A Windows-first PostgreSQL restore utility for a narrow support scenario: rebuilding a local or operator-controlled database quickly after workstation failure, reinstall, or environment corruption.
+
+- restore profiles that separate safer session-level acceleration from explicitly unsafe cluster-wide durability tradeoffs
+- operator-led database drop/recreate flow for offline rebuild cases
+- backup validation, connection checks, and lightweight post-restore verification
+- pragmatic framing: not a cloud backup platform, not PITR orchestration, not a live in-place restore system
+
+This repo shows another part of my support engineering approach: encode the ugly recovery path honestly, preserve operator control, and make the risky parts explicit instead of hiding them behind vague automation.
 
 ---
 
