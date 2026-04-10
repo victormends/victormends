@@ -41,9 +41,9 @@ tickets_per_week:  80+
 
 featured_now:
   - "incident-response-runbook  # PostgreSQL incident response + NVC + post-mortems"
+  - "pg-incident-recovery      # Windows-first PostgreSQL multi-cluster recovery tool"
 
 releasing_soon:
-  - "cluster-recovery.ps1    # 30-database WAL + postmaster.pid automation"
   - "etl-pipeline.sql        # PL/pgSQL, 70M records, government dataset"
   - "sefaz-xml-parser.py     # Fiscal diagnosis toolkit (NF-e, CT-e, CFOP)"
   - "pg-bloat-audit.sql      # pg_class / pg_toast internals analysis queries"
@@ -73,6 +73,30 @@ A production-grade PostgreSQL incident response framework that combines:
 - NVC-based client communication and war-room protocols
 
 This is the clearest public artifact of how I approach production systems: diagnose from first principles, document the failure mode precisely, and encode the fix so the class of incident does not recur.
+
+---
+
+## Featured Tool Repo
+
+<p align="center">
+  <a href="https://github.com/victormends/pg-incident-recovery">
+    <img src="https://img.shields.io/badge/pg--incident--recovery-public-2ea44f?style=for-the-badge&logo=github&logoColor=white" alt="pg-incident-recovery"/>
+  </a>
+</p>
+
+**[`pg-incident-recovery`](https://github.com/victormends/pg-incident-recovery)**
+
+A Windows-first PostgreSQL recovery orchestrator for multi-cluster hosts. It automates the safe parts of post-reboot incident handling:
+
+- discovery of stopped PostgreSQL services
+- data-directory resolution from service definitions
+- stale `postmaster.pid` cleanup
+- `pg_controldata`-based missing WAL triage
+- parallel startup with bounded retries
+- crash-recovery monitoring and clean handoff back to Windows SCM
+- persistent queue files so interrupted runs can resume cleanly
+
+This is the executable complement to the runbook repo: the runbook explains how I reason about incidents; this tool shows how I automate one of the ugliest recovery paths without crossing into unsafe automation.
 
 ---
 
