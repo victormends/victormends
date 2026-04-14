@@ -45,11 +45,6 @@ featured_now:
   - "windows-postgres-deployment-installer  # operator-assisted Windows PostgreSQL deployment automation"
   - "pg-restore-tool           # Windows-first local PostgreSQL restore utility for rebuild scenarios"
 
-releasing_soon:
-  - "etl-pipeline.sql        # PL/pgSQL, 70M records, government dataset"
-  - "sefaz-xml-parser.py     # Fiscal diagnosis toolkit (NF-e, CT-e, CFOP)"
-  - "pg-bloat-audit.sql      # pg_class / pg_toast internals analysis queries"
-
 open_to:           [Support Engineering, Database Engineering, SRE]
 contact:           linkedin.com/in/mendes-victor
 ```
