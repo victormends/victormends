@@ -50,7 +50,10 @@
 - **Engineered a 70M-record ETL pipeline** in a single day using PL/pgSQL + PowerShell against a 15GB+ government dataset. Unlogged tables and dynamic SQL cut processing time 60%, surfacing the top 0.001% of leads that drove Q3 commercial strategy.
 - **Compressed fiscal invoice diagnosis from 30+ min to under 5 min** using LLM-assisted XML parsing of raw SEFAZ rejection messages across NCM, CFOP, ICMS, and CBNEF formats, eliminating an entire class of developer escalations.
 - **Zero data-loss legacy migration:** reverse-engineered a Firebird database with no documentation in an afternoon, replaying 20 years of transaction history (10,000+ items, 500k BRL) from first principles to reconstruct current inventory state.
-- **OBMEP Mathematics Olympiad:** Silver Medal (2016), Bronze (2014), 2x Honorable Mentions; top 0.01% among 18M+ participants nationally.
+
+<hr/>
+
+**Early signal:** OBMEP Silver Medal (2016), Bronze (2014), 2x Honorable Mentions; top 0.01% among 18M+ participants nationally.
 
 <br/>
     </td>
@@ -91,8 +94,6 @@ contact:           linkedin.com/in/mendes-victor
 | Deployment automation | [`windows-postgres-deployment-installer`](https://github.com/victormends/windows-postgres-deployment-installer) | Human-reviewed PostgreSQL deployment automation for Windows workstations and small servers |
 | Fiscal support utilities | [`nfe-xml-organizer`](https://github.com/victormends/nfe-xml-organizer), [`tls-fix-erp-updater`](https://github.com/victormends/tls-fix-erp-updater) | Practical PowerShell utilities around NF-e file handling and Windows TLS registry failure modes |
 | Data visualization | [`one-piece-ratings-timeline`](https://github.com/victormends/one-piece-ratings-timeline) | Static-site data product, source policy, scheduled refresh, and GitHub Pages publishing |
-
-I keep public artifacts sanitized: no client data, private hostnames, credentials, or internal support tickets.
 
 ---
 
@@ -179,26 +180,20 @@ This is the executable complement to the runbook repo: the runbook explains how 
 
 ---
 
-## Earlier Background
+## Education
 
 <table>
   <tr>
-    <td align="center" width="60%">
-<br/>
-
-**Previous Role — Cloud & Infrastructure** *(Girafa, 2022-2024)*
-
-- Managed DNS and cloud infrastructure for 70+ corporate clients across AWS Route 53, Registro.br, and Locaweb.
-- Investigated a client security breach by auditing Git history, WordPress roles, and access logs.
-- Coordinated staged AWS deployments across a multi-developer environment, enforcing freeze protocols across 70+ client sites.
-
-<br/>
-    </td>
-    <td width="40%" valign="top">
+    <td align="center" width="50%">
 <br/>
 
 **FGV** — Data Science & Economics (2020-2022)
 Full-ride OBMEP scholarship &nbsp;·&nbsp; EDA: 9.71
+
+<br/>
+    </td>
+    <td align="center" width="50%">
+<br/>
 
 **IFPR** — Systems Analysis & Development (2023-2024)
 Grade A in Mathematics for Computing
@@ -207,6 +202,8 @@ Grade A in Mathematics for Computing
     </td>
   </tr>
 </table>
+
+Public artifacts are sanitized: no client data, private hostnames, credentials, or internal support tickets.
 
 ---
 
