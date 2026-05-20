@@ -40,6 +40,7 @@ sla_compliance:    "95%+"
 tickets_per_week:  80+
 
 featured_now:
+  - "receita-cnpj-etl-pipeline  # Receita CNPJ ETL + PostgreSQL client classifier"
   - "incident-response-runbook  # PostgreSQL incident response + NVC + post-mortems"
   - "pg-incident-recovery      # Windows-first PostgreSQL multi-cluster recovery tool"
   - "windows-postgres-deployment-installer  # operator-assisted Windows PostgreSQL deployment automation"
@@ -48,6 +49,22 @@ featured_now:
 open_to:           [Support Engineering, Database Engineering, SRE]
 contact:           linkedin.com/in/mendes-victor
 ```
+
+---
+
+## Portfolio Map
+
+| Area | Public artifact | What it demonstrates |
+|---|---|---|
+| Data engineering | [`receita-cnpj-etl-pipeline`](https://github.com/victormends/receita-cnpj-etl-pipeline) | Windows-first ETL for Receita Federal CNPJ open data, PostgreSQL staging, large-file classification, sanitized release packaging |
+| Incident response | [`incident-response-runbook`](https://github.com/victormends/incident-response-runbook) | PostgreSQL severity classification, triage, communication, escalation, and post-mortem structure |
+| Recovery automation | [`pg-incident-recovery`](https://github.com/victormends/pg-incident-recovery) | Safe Windows service recovery boundaries for PostgreSQL crash-recovery scenarios |
+| Restore tooling | [`pg-restore-tool`](https://github.com/victormends/pg-restore-tool) | Operator-controlled local restore flow with explicit safe/fast/unsafe profiles |
+| Deployment automation | [`windows-postgres-deployment-installer`](https://github.com/victormends/windows-postgres-deployment-installer) | Human-reviewed PostgreSQL deployment automation for Windows workstations and small servers |
+| Fiscal support utilities | [`nfe-xml-organizer`](https://github.com/victormends/nfe-xml-organizer), [`tls-fix-erp-updater`](https://github.com/victormends/tls-fix-erp-updater) | Practical PowerShell utilities around NF-e file handling and Windows TLS registry failure modes |
+| Data visualization | [`one-piece-ratings-timeline`](https://github.com/victormends/one-piece-ratings-timeline) | Static-site data product, source policy, scheduled refresh, and GitHub Pages publishing |
+
+Most serious public repos now have `v0.1.0` releases, topics, licenses, safety notes, and validation checklists. I keep the public versions sanitized: no client data, private hostnames, credentials, or internal support tickets.
 
 ---
 
