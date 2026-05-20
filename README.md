@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&duration=3500&pause=1000&color=C678DD&center=true&vCenter=true&width=700&height=45&lines=Production+PostgreSQL+%40+500%2B+enterprise+clients+%7C+95%25%2B+SLA;P1%2FP2+incident+response%2C+end-to-end%2C+no+escalation" alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&duration=3500&pause=1000&color=C678DD&center=true&vCenter=true&width=700&height=45&lines=Production+PostgreSQL+%40+500%2B+enterprise+clients;P1%2FP2+incident+response%2C+end-to-end%2C+no+escalation" alt="Typing SVG"/>
 </p>
 
 <p align="center">
@@ -26,6 +26,37 @@
   <img src="https://img.shields.io/badge/English%20%E2%80%93%20B2%20Full%20Professional-6c757d?style=flat-square" alt="English"/>
 </p>
 
+## Impact Highlights
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+<br/>
+
+**PostgreSQL & Database Engineering**
+
+- **Eliminated 100% of WAL data losses** across 500+ environments by querying `pg_replication_slots`, identifying an orphaned slot holding WAL segments for a decommissioned subscriber, and enforcing `max_slot_wal_keep_size` as a fleet-wide guardrail.
+- **Cut restore time 60%** (17 min to 6:58) on a 15GB+ database via `pg_restore -j 4` parallel processing. Traced 1GB/month disk bloat through `pg_class` and `pg_toast` to encrypted paths serialized as thousands of characters per audit log entry.
+- **Automated 30-database cluster recovery** with a PowerShell script that parallelizes state checks, clears stale `postmaster.pid` files, and handles WAL recovery on boot. Recovery cut from hours to under 5 minutes, daily support calls to near-zero.
+- **Restored database access** fleet-wide after a `pg_hba.conf` SCRAM-SHA-256 vs MD5 mismatch, applying scoped MD5 by IP range while preserving SCRAM everywhere else.
+
+<br/>
+    </td>
+    <td width="50%" valign="top">
+<br/>
+
+**Automation & Data Engineering**
+
+- **Engineered a 70M-record ETL pipeline** in a single day using PL/pgSQL + PowerShell against a 15GB+ government dataset. Unlogged tables and dynamic SQL cut processing time 60%, surfacing the top 0.001% of leads that drove Q3 commercial strategy.
+- **Compressed fiscal invoice diagnosis from 30+ min to under 5 min** using LLM-assisted XML parsing of raw SEFAZ rejection messages across NCM, CFOP, ICMS, and CBNEF formats, eliminating an entire class of developer escalations.
+- **Zero data-loss legacy migration:** reverse-engineered a Firebird database with no documentation in an afternoon, replaying 20 years of transaction history (10,000+ items, 500k BRL) from first principles to reconstruct current inventory state.
+- **OBMEP Mathematics Olympiad:** Silver Medal (2016), Bronze (2014), 2x Honorable Mentions; top 0.01% among 18M+ participants nationally.
+
+<br/>
+    </td>
+  </tr>
+</table>
+
 ---
 
 ```yaml
@@ -36,15 +67,12 @@ location:          União da Vitória, PR, Brazil
 
 specialty:         [PostgreSQL, Incident Response, ETL, Windows Server Automation]
 clients:           500+ corporate  # 1500+ end-users
-sla_compliance:    "95%+"
-tickets_per_week:  80+
+proof_point:       OBMEP Silver Medal  # top 0.01% among 18M+ participants
 
 featured_now:
   - "receita-cnpj-etl-pipeline  # Receita CNPJ ETL + PostgreSQL client classifier"
   - "incident-response-runbook  # PostgreSQL incident response + NVC + post-mortems"
   - "pg-incident-recovery      # Windows-first PostgreSQL multi-cluster recovery tool"
-  - "windows-postgres-deployment-installer  # operator-assisted Windows PostgreSQL deployment automation"
-  - "pg-restore-tool           # Windows-first local PostgreSQL restore utility for rebuild scenarios"
 
 open_to:           [Support Engineering, Database Engineering, SRE]
 contact:           linkedin.com/in/mendes-victor
@@ -64,11 +92,11 @@ contact:           linkedin.com/in/mendes-victor
 | Fiscal support utilities | [`nfe-xml-organizer`](https://github.com/victormends/nfe-xml-organizer), [`tls-fix-erp-updater`](https://github.com/victormends/tls-fix-erp-updater) | Practical PowerShell utilities around NF-e file handling and Windows TLS registry failure modes |
 | Data visualization | [`one-piece-ratings-timeline`](https://github.com/victormends/one-piece-ratings-timeline) | Static-site data product, source policy, scheduled refresh, and GitHub Pages publishing |
 
-Most serious public repos now have `v0.1.0` releases, topics, licenses, safety notes, and validation checklists. I keep the public versions sanitized: no client data, private hostnames, credentials, or internal support tickets.
+I keep public artifacts sanitized: no client data, private hostnames, credentials, or internal support tickets.
 
 ---
 
-## Featured Public Repo
+## Featured Repos
 
 <p align="center">
   <a href="https://github.com/victormends/incident-response-runbook">
@@ -76,7 +104,7 @@ Most serious public repos now have `v0.1.0` releases, topics, licenses, safety n
   </a>
 </p>
 
-**[`incident-response-runbook`](https://github.com/victormends/incident-response-runbook)**
+### [`incident-response-runbook`](https://github.com/victormends/incident-response-runbook)
 
 A production-grade PostgreSQL incident response framework that combines:
 
@@ -88,17 +116,13 @@ A production-grade PostgreSQL incident response framework that combines:
 
 This is the clearest public artifact of how I approach production systems: diagnose from first principles, document the failure mode precisely, and encode the fix so the class of incident does not recur.
 
----
-
-## Featured Tool Repo
-
 <p align="center">
   <a href="https://github.com/victormends/pg-incident-recovery">
     <img src="https://img.shields.io/badge/pg--incident--recovery-public-2ea44f?style=for-the-badge&logo=github&logoColor=white" alt="pg-incident-recovery"/>
   </a>
 </p>
 
-**[`pg-incident-recovery`](https://github.com/victormends/pg-incident-recovery)**
+### [`pg-incident-recovery`](https://github.com/victormends/pg-incident-recovery)
 
 A Windows-first PostgreSQL recovery orchestrator for multi-cluster hosts. It automates the safe parts of post-reboot incident handling:
 
@@ -112,88 +136,9 @@ A Windows-first PostgreSQL recovery orchestrator for multi-cluster hosts. It aut
 
 This is the executable complement to the runbook repo: the runbook explains how I reason about incidents; this tool shows how I automate one of the ugliest recovery paths without crossing into unsafe automation.
 
----
+### Deployment and Restore Utilities
 
-## Featured Deployment Repo
-
-<p align="center">
-  <a href="https://github.com/victormends/windows-postgres-deployment-installer">
-    <img src="https://img.shields.io/badge/windows--postgres--deployment--installer-public-2ea44f?style=for-the-badge&logo=github&logoColor=white" alt="windows-postgres-deployment-installer"/>
-  </a>
-</p>
-
-**[`windows-postgres-deployment-installer`](https://github.com/victormends/windows-postgres-deployment-installer)**
-
-An operator-assisted Windows 10/11 deployment baseline for PostgreSQL environments where agility and standardization matter more than infrastructure abstraction.
-
-- PostgreSQL ZIP bootstrap with `initdb`, service registration, and config templating
-- role synchronization, database creation, restore orchestration, and SQL validation
-- conservative-by-default network posture with configurable listen addresses and LAN CIDRs
-- operator-focused fallbacks designed to reduce manual install time from hours to minutes while preserving human review at the end
-
-This repo shows how I think about deployment automation in support-heavy environments: automate the repetitive and failure-prone steps, make reruns safer, and still leave the final evaluation in human hands.
-
----
-
-## Featured Restore Repo
-
-<p align="center">
-  <a href="https://github.com/victormends/pg-restore-tool">
-    <img src="https://img.shields.io/badge/pg--restore--tool-public-2ea44f?style=for-the-badge&logo=github&logoColor=white" alt="pg-restore-tool"/>
-  </a>
-</p>
-
-**[`pg-restore-tool`](https://github.com/victormends/pg-restore-tool)**
-
-A Windows-first PostgreSQL restore utility for a narrow support scenario: rebuilding a local or operator-controlled database quickly after workstation failure, reinstall, or environment corruption.
-
-- restore profiles that separate safer session-level acceleration from explicitly unsafe cluster-wide durability tradeoffs
-- operator-led database drop/recreate flow for offline rebuild cases
-- backup validation, connection checks, and lightweight post-restore verification
-- pragmatic framing: not a cloud backup platform, not PITR orchestration, not a live in-place restore system
-
-This repo shows another part of my support engineering approach: encode the ugly recovery path honestly, preserve operator control, and make the risky parts explicit instead of hiding them behind vague automation.
-
----
-
-## Impact Highlights
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-<br/>
-
-**PostgreSQL & Database Engineering**
-
-- **Eliminated 100% of WAL data losses** across 500+ environments by querying `pg_replication_slots`, identifying an orphaned slot holding WAL segments for a decommissioned subscriber, and enforcing `max_slot_wal_keep_size` as a fleet-wide guardrail so the failure class cannot recur.
-- **Cut restore time 60%** (17 min to 6:58) on a 15GB+ database via `pg_restore -j 4` parallel processing. Traced 1GB/month disk bloat through `pg_class` and `pg_toast` to encrypted paths serialized as thousands of characters per audit log entry.
-- **Automated 30-database cluster recovery** with a PowerShell script that parallelizes state checks, clears stale `postmaster.pid` files, and handles WAL recovery on boot. Recovery cut from hours to under 5 minutes, daily support calls to near-zero.
-- **Traced silent TLS 1.0 downgrade failures** on Windows 11 clients via Process Monitor with no prior documentation. Identified a registry key forced by the application, delivered a quickfix, and enabled a permanent code fix within the same week.
-- **Restored database access** fleet-wide after a `pg_hba.conf` SCRAM-SHA-256 vs MD5 mismatch, applying scoped MD5 by IP range while preserving SCRAM everywhere else. No reformats, no security posture reduction.
-
-<br/>
-    </td>
-    <td width="50%" valign="top">
-<br/>
-
-**Automation & Data Engineering**
-
-- **Engineered a 70M-record ETL pipeline** in a single day using PL/pgSQL + PowerShell against a 15GB+ government dataset. Unlogged tables and dynamic SQL cut processing time 60%, surfacing the top 0.001% of leads that drove Q3 commercial strategy.
-- **Compressed fiscal invoice diagnosis from 30+ min to under 5 min** using LLM-assisted XML parsing of raw SEFAZ rejection messages across NCM, CFOP, ICMS, and CBNEF formats, eliminating an entire class of developer escalations.
-- **Zero data-loss legacy migration:** reverse-engineered a Firebird database with no documentation in an afternoon, replaying 20 years of transaction history (10,000+ items, 500k BRL) from first principles to reconstruct current inventory state.
-
-<br/>
-
-**Previous Role — Cloud & Infrastructure** *(Girafa, 2022-2024)*
-
-- **Managed DNS and cloud infrastructure** for 70+ corporate clients across AWS Route 53, Registro.br, and Locaweb, including purchases, migrations, ownership transfers, and full record configuration.
-- **Investigated a client security breach** by auditing Git history, WordPress roles, and access logs. Revoked sessions, reset credentials, restructured access controls.
-- **Coordinated staged AWS deployments** across a multi-developer environment, enforcing freeze protocols across 70+ client sites.
-
-<br/>
-    </td>
-  </tr>
-</table>
+[`windows-postgres-deployment-installer`](https://github.com/victormends/windows-postgres-deployment-installer) and [`pg-restore-tool`](https://github.com/victormends/pg-restore-tool) cover the less glamorous support paths around PostgreSQL: workstation/small-server deployment, local rebuilds, restore profiles, and operator-reviewed automation. They are deliberately scoped tools rather than platform claims: the goal is to remove repetitive failure-prone steps while keeping destructive choices explicit.
 
 ---
 
@@ -234,16 +179,18 @@ This repo shows another part of my support engineering approach: encode the ugly
 
 ---
 
-## Background
+## Earlier Background
 
 <table>
   <tr>
     <td align="center" width="60%">
 <br/>
 
-**OBMEP Mathematics Olympiad**
-Silver Medal (2016) &nbsp;·&nbsp; Bronze (2014) &nbsp;·&nbsp; 2x Honorable Mentions
-Top 0.01% of **18M+ participants** nationally &nbsp;·&nbsp; Selected for CDMC elite program at FGV
+**Previous Role — Cloud & Infrastructure** *(Girafa, 2022-2024)*
+
+- Managed DNS and cloud infrastructure for 70+ corporate clients across AWS Route 53, Registro.br, and Locaweb.
+- Investigated a client security breach by auditing Git history, WordPress roles, and access logs.
+- Coordinated staged AWS deployments across a multi-developer environment, enforcing freeze protocols across 70+ client sites.
 
 <br/>
     </td>
