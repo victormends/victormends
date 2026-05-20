@@ -188,7 +188,7 @@ This is the executable complement to the runbook repo: the runbook explains how 
 <br/>
 
 **FGV** — Data Science & Economics (2020-2022)
-Full-ride OBMEP scholarship &nbsp;·&nbsp; Exploratory Data Analysis: 9.71/10
+Full-ride OBMEP scholarship
 
 <br/>
     </td>
