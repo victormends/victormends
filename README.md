@@ -20,9 +20,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Brasil%2C%20PR-4B8BBE?style=flat-square&logoColor=white" alt="Location"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/Pedroso%20Automa%C3%A7%C3%A3o%20%E2%80%93%20Current-2ea44f?style=flat-square" alt="Current employer"/>
-  &nbsp;
   <img src="https://img.shields.io/badge/English%20%E2%80%93%20B2%20Full%20Professional-6c757d?style=flat-square" alt="English"/>
 </p>
 
@@ -47,7 +44,7 @@
 
 **Automation & Data Engineering**
 
-- **Engineered a 70M-record ETL pipeline** in a single day using PL/pgSQL + PowerShell against a 15GB+ government dataset. Unlogged tables and dynamic SQL cut processing time 60%, surfacing the top 0.001% of leads that drove Q3 commercial strategy.
+- **Engineered a 70M-record ETL pipeline** in a single day using PL/pgSQL + PowerShell against a 15GB+ government dataset. Unlogged tables and dynamic SQL cut processing time 60%, surfacing the top 0.001% of leads for commercial prioritization.
 - **Compressed fiscal invoice diagnosis from 30+ min to under 5 min** using LLM-assisted XML parsing of raw SEFAZ rejection messages across NCM, CFOP, ICMS, and CBNEF formats, eliminating an entire class of developer escalations.
 - **Zero data-loss legacy migration:** reverse-engineered a Firebird database with no documentation in an afternoon, replaying 20 years of transaction history (10,000+ items, 500k BRL) from first principles to reconstruct current inventory state.
 
@@ -65,11 +62,11 @@
 ```yaml
 name:              João Victor Mendes
 role:              L2/L3 Technical Support Engineer
-company:           Pedroso Automação  # B2B fiscal compliance ERP SaaS
+current_focus:     B2B fiscal compliance ERP SaaS
 location:          União da Vitória, PR, Brazil
 
 specialty:         [PostgreSQL, Incident Response, ETL, Windows Server Automation]
-clients:           500+ corporate  # 1500+ end-users
+scale:             500+ corporate environments  # 1500+ end-users
 proof_point:       OBMEP Silver Medal  # top 0.01% among 18M+ participants
 
 featured_now:
