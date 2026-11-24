@@ -1,6 +1,6 @@
 # João Victor Mendes
 
-**Production Support Engineer (PSE) / SRE · Cloud · Observability · Database Reliability**
+**Site Reliability & Production Support Engineer · Cloud · Observability · Database Reliability**
 
 Production Support & Site Reliability Engineer with ~4 years of experience sustaining corporate fleets (500+ environments, 1,500+ users) and distributed cloud platforms (FinTech & AI). Focused on relational database internals (PostgreSQL, Aurora MySQL), saturation diagnostics, P1/P2 incident response, and Terraform-codified detection engineering.
 
@@ -37,9 +37,9 @@ Production Support & Site Reliability Engineer with ~4 years of experience susta
 
 ## Production Track Record
 
-**Monest** — *Production Support Engineer (PSE) / SRE* · `Aug 2026 – Present` *(Credit Recovery FinTech & AI, Remote)*
+**Monest** — *Site Reliability & Production Support Engineer* · `Aug 2026 – Present` *(Credit Recovery FinTech & AI, Remote)*
 - **Detection Engineering & Alert Calibration:** Cut live Aurora replica CPU alert openings **~84%** (**2.5/day to 0.4/day** across 24 days post-deploy) via two-tier Terraform/NRQL policies; audited hundreds of conditions via NerdGraph to ship distinct-session NRQL alerts (**62% fewer openings** in backtesting, surfacing incidents hours earlier) and a live scheduler deadman watchdog (**>90% MTTD reduction** in incident replay).
-- **Database Triage & Selective Cache Telemetry:** Investigated Aurora MySQL saturation via AWS Performance Insights to isolate write contention, calibrate connection thresholds, and define RDS Proxy pooling; led a Redis ElastiCache OOM post-mortem and shipped Terraform-managed CloudWatch Metric Stream allowlists (live since Nov 2026, **~95% estimated series reduction**; caught a subsequent live memory-pressure alert).
+- **Database Triage & Selective Cache Telemetry:** Investigated Aurora MySQL saturation via AWS Performance Insights to isolate write contention, calibrate connection thresholds, and define RDS Proxy pooling; led a Redis ElastiCache OOM post-mortem and shipped Terraform-managed CloudWatch Metric Stream allowlists (live since Nov 2026, **~95% estimated metric-series count reduction**; caught a subsequent live memory-pressure alert).
 - **Host Reliability & EKS Spot HA:** Restored EC2 host access after root-volume exhaustion via AWS SSM under least privilege IAM, stabilized `systemd` boot ordering (`After=network-online.target`, `nofail`) + `OnFailure` Slack alerts across 10 services (**13/13 containers** auto-recovered in a live reboot), eliminated single-node EKS Spot co-location via ArgoCD GitOps (`topologySpreadConstraints` `DoNotSchedule`, 2-replica HA with zero `No Replica` alerts post-merge), and migrated LLM workloads to Bedrock IAM task roles.
 
 **Pedroso Automação** — *Technical Support Engineer (L2/L3)* · `Jun 2024 – Aug 2026` *(500+ environments, 1,500+ users)*
