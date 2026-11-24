@@ -22,6 +22,19 @@ Production Support & Site Reliability Engineer with ~4 years of experience susta
 
 ---
 
+## Resume Claims → Verifiable Public Evidence
+
+| Résumé Claim | Public Repository | What Is Verifiable in CI vs. Field Context |
+|---|---|---|
+| Live hydrological ops (`2.7M+` reqs, `43k req/hr`) | [`rioiguacu.jornalocomercio.com`](https://rioiguacu.jornalocomercio.com) & [`linux-bounded-service-ops`](https://github.com/victormends/linux-bounded-service-ops) | Live site online; `pytest` CI verifies `singleflight` coalescing, `systemd` hardening, SQLite GFS backup & 2-phase pruner |
+| PostgreSQL WAL slots, locks, TOAST & auth (Linux) | [`pg-linux-diagnostics`](https://github.com/victormends/pg-linux-diagnostics) | **Live PostgreSQL 16 Docker CI** runs `shellcheck` & verifies slot guard, `pg_blocking_pids`, `pg_toast`, `scram-sha-256`, and `EXPLAIN ANALYZE` (`1924 -> 52` blocks) |
+| Terraform detection, CloudWatch & EKS Spot HA | [`terraform-sre-observability-guardrails`](https://github.com/victormends/terraform-sre-observability-guardrails) | **Terraform `fmt`/`validate` + Kustomize CI** checks NRQL deadman/session policies, Metric Stream filters & Spot `DoNotSchedule`; employer metrics stay private under NDA |
+| Multi-DB Windows PG recovery & slot automation | [`pg-incident-recovery`](https://github.com/victormends/pg-incident-recovery) | PowerShell CI (`33/33` tests) verifies state machine, stale PID cleanup & WAL triage; `~3h -> <5 min` field timings are non-reproducible in mocks |
+| Parallel directory restores (`pg_restore -j 4`) | [`pg-restore-tool`](https://github.com/victormends/pg-restore-tool) | `pytest` CI verifies `-Fd`/`-Fc` `-j` dispatch (excluding `.tar`) & ships [`pg_toast_growth_audit.sql`](https://github.com/victormends/pg-restore-tool/blob/main/sql/pg_toast_growth_audit.sql); `17 -> 7 min` reported from field |
+| ITIL P1/P2 playbooks (`pg_wal`, Aurora, EKS, `systemd`) | [`incident-response-runbook`](https://github.com/victormends/incident-response-runbook) | Automated validator CI checks markdown links, fences, sanitization & playbooks on every push |
+
+---
+
 ## Production Track Record
 
 **Monest** — *Production Support Engineer (PSE) / SRE* · `Aug 2026 – Present` *(Credit Recovery FinTech & AI, Remote)*
@@ -55,6 +68,7 @@ Production Support & Site Reliability Engineer with ~4 years of experience susta
 
 | Repository | Focus | Scope |
 |---|---|---|
+| [`pg-linux-diagnostics`](https://github.com/victormends/pg-linux-diagnostics) | Linux PG16 Live Diagnostics | Read-only Bash/SQL toolkit + dry-run slot guard (`pg_blocking_pids`, `pg_toast`, `scram-sha-256`, `EXPLAIN ANALYZE`) tested against live `postgres:16-alpine` in CI |
 | [`incident-response-runbook`](https://github.com/victormends/incident-response-runbook) | Incident Response & RCA | P1/P2 playbooks (`pg_wal`, Aurora MySQL saturation, EKS Spot SPOFs, `systemd` watchdogs), post-mortems, and war-room comms |
 | [`pg-incident-recovery`](https://github.com/victormends/pg-incident-recovery) | Crash-Recovery Orchestration | Multi-cluster PostgreSQL recovery with `pg_controldata` WAL triage, slot monitoring, stale PID cleanup, and bounded retries |
 | [`pg-restore-tool`](https://github.com/victormends/pg-restore-tool) | Restore Automation | Operator-controlled PostgreSQL rebuild/restore CLI (`pg_restore -j` directory/custom, tar, sql) with safe, fast, and unsafe execution profiles |
