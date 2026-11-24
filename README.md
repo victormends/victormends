@@ -40,11 +40,24 @@ Production Support & Site Reliability Engineer with ~4 years of experience susta
 
 ## Selected Public Repositories
 
+### SRE, Cloud & Reliability
+
+| Repository | Focus | Scope |
+|---|---|---|
+| [`linux-bounded-service-ops`](https://github.com/victormends/linux-bounded-service-ops) | Linux SRE & Concurrency | `systemd` hardening, atomic symlink releases, `singleflight` deduplication, and secret-hygiene guards for constrained VPS hosts |
+| [`llm-resilience-gateway`](https://github.com/victormends/llm-resilience-gateway) | AI-Ops Resilience | Zero-dependency Node.js LLM proxy with circuit breakers, token-bucket limits, injection guards, and deterministic evals |
+| [`open-finance-resilient-client`](https://github.com/victormends/open-finance-resilient-client) | Resilient API Client | FastAPI + `httpx` Open Finance client with `Retry-After` backoff, circuit breaking, Prometheus metrics, and non-root Docker runtime |
+| [`resilient-batch-reconciler`](https://github.com/victormends/resilient-batch-reconciler) | Fault-Tolerant Batch Ops | Cross-process file-locked reconciler with fail-closed corruption quarantine, idempotent checkpoints, and 2-probe telemetry fusion |
+| [`guarded-forecast-publisher`](https://github.com/victormends/guarded-forecast-publisher) | Data & Release Safety | Contract-gated artifact publisher with SHA-256 input fingerprinting and Empirical Bayes shrinkage for sparse canary cohorts |
+
+### Database Reliability (DBRE) & Data Pipelines
+
 | Repository | Focus | Scope |
 |---|---|---|
 | [`incident-response-runbook`](https://github.com/victormends/incident-response-runbook) | Incident Response & RCA | PostgreSQL P1/P2 playbooks (`pg_wal` exhaustion, lock contention, `pg_hba` auth), post-mortems, and war-room comms |
-| [`pg-incident-recovery`](https://github.com/victormends/pg-incident-recovery) | Crash-Recovery Orchestration | Multi-cluster Windows PostgreSQL recovery with `pg_controldata` WAL triage, stale PID cleanup, and bounded parallel retries |
+| [`pg-incident-recovery`](https://github.com/victormends/pg-incident-recovery) | Crash-Recovery Orchestration | Multi-cluster PostgreSQL recovery with `pg_controldata` WAL triage, slot monitoring, stale PID cleanup, and bounded retries |
 | [`pg-restore-tool`](https://github.com/victormends/pg-restore-tool) | Restore Automation | Operator-controlled PostgreSQL rebuild/restore CLI with explicit safe, fast, and unsafe execution profiles |
+| [`atomic-sqlite-fts5-engine`](https://github.com/victormends/atomic-sqlite-fts5-engine) | Storage & Indexing | Atomic SQLite FTS5 index builder with deferred B-tree indexes, reader-safe swaps, integrity checks, and latency benchmarks |
 | [`receita-cnpj-etl-pipeline`](https://github.com/victormends/receita-cnpj-etl-pipeline) | High-Volume ETL | Autonomous ETL and PostgreSQL staging pipeline for large Brazilian federal CNPJ open-data dumps |
 
 ---
