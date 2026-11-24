@@ -54,7 +54,7 @@ Production Support & Site Reliability Engineer with ~4 years of experience susta
 
 | Repository | Focus | Scope |
 |---|---|---|
-| [`incident-response-runbook`](https://github.com/victormends/incident-response-runbook) | Incident Response & RCA | PostgreSQL P1/P2 playbooks (`pg_wal` exhaustion, lock contention, `pg_hba` auth), post-mortems, and war-room comms |
+| [`incident-response-runbook`](https://github.com/victormends/incident-response-runbook) | Incident Response & RCA | P1/P2 playbooks (`pg_wal`, Aurora MySQL saturation, EKS Spot SPOFs, `systemd` watchdogs), post-mortems, and war-room comms |
 | [`pg-incident-recovery`](https://github.com/victormends/pg-incident-recovery) | Crash-Recovery Orchestration | Multi-cluster PostgreSQL recovery with `pg_controldata` WAL triage, slot monitoring, stale PID cleanup, and bounded retries |
 | [`pg-restore-tool`](https://github.com/victormends/pg-restore-tool) | Restore Automation | Operator-controlled PostgreSQL rebuild/restore CLI with explicit safe, fast, and unsafe execution profiles |
 | [`atomic-sqlite-fts5-engine`](https://github.com/victormends/atomic-sqlite-fts5-engine) | Storage & Indexing | Atomic SQLite FTS5 index builder with deferred B-tree indexes, reader-safe swaps, integrity checks, and latency benchmarks |
